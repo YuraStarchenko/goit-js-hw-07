@@ -22,7 +22,6 @@ function galleryItemsCardsMarkup(galleryItems) {
 
 	// 2) Ініціалізація бібліотеки після створення і додання елементів галереї у div.gallery.
 const lightbox = new SimpleLightbox('.gallery a', {
-
 	captionsData:'alt',
 	captionPosition:'bottom',
 	captionDelay:'250'

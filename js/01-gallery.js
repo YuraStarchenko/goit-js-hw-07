@@ -40,8 +40,9 @@ function imgClickZoomModal(event) {
 	instance.show();
 
 	// 3) Закриття з клавіатури Escape.
-document.addEventListener('keydown', function(event) {
+	galleryContainerItems.addEventListener('keydown', function(event) {
 		if (event.code === 'Escape') {
+			galleryContainerItems.removeEventListener('keydown', imgClickZoomModal)
 		instance.close();
 	}
 });
